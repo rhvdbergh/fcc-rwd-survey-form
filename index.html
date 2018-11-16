@@ -4,10 +4,55 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" type="text/css" href="./css/main.css">
   <title>Survey Form</title>
 </head>
 <body>
-  
+  <div id="header">
+   <h1 id="title">Survey Form</h1>
+  </div>
+  <div id="form-body">
+    <p id="description">How's your level of humor doing today?</p>
+    <form action="submit" id="survey-form">
+      <div class="label-div"><label for="name" id="name-label">Name: </label><input type="text" id="name" class="input-box" name="name" placeholder="Name ..."required></div>
+      <div class="label-div"><label for="email" id="email-label">Email: </label><input type="email" id="email" class="input-box" name="email" placeholder="Email ..." required></div>
+      <div class="label-div"><label for="number" id="number-label">Random Number: </label><input type="number" class="input-box" id="number" name="number" min="1" max="5" placeholder="Number range: 1-5" required></div>
+      <div class="label-div"><label for="dropdown">Select something from the dropdown menu: </label>
+        <select id="dropdown" name="dropdown">
+          <option value="Zingers">Zingers</option>
+          <option value="Burgers">Burgers</option>
+          <option value="Sweets">Sweets</option>
+          <option value="Shakers">Shakers</option>
+        </select>
+      </div>
+      <p>Select a single rudimentary radio buttons!</p>
+      <div class="label-div">
+        <label for="chippers">Chippers</label>
+        <input type="radio" name="rudimentary" id="chippers" value="Chippers" checked>
+        <label for="chompers">Chompers</label>      
+        <input type="radio" name="rudimentary" id="chompers" value="Chompers">
+        <label for="chappers">Chappers</label>      
+        <input type="radio" name="rudimentary" id="chappers" value="Chappers">
+      </div>
+      <p>Select as many checktastic checkboxes as you like!</p>
+      <div class="label-div">
+        <label for="slithers">Slithers</label>
+        <input type="checkbox" name="checktastic" id="slithers" value="Slithers">
+        <label for="slathers">Slathers</label>
+        <input type="checkbox" name="checktastic" id="slathers" value="Slathers">
+        <label for="sloth-furs">Sloth-furs</label>
+        <input type="checkbox" name="checktastic" id="sloth-furs" value="Sloth-furs">
+      </div>
+      <div id="comment-area">
+        <p>Please enter any additional comments here in this little box (which has the ability to amazingly expand):</p>
+        <p>(P.S. Please don't comment about the split infinitive.)</p>
+        <textarea name="comments" id="comments" cols="30" rows="10"></textarea>
+      </div>
+      <div id="submit-div">
+        <button type="submit" id="submit">Submit!</button>
+      </div>
+    </form>
+  </div>
   <!-- FreeCodeCamp Testing Suite -->
   <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
 </body>
