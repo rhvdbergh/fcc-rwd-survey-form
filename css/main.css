@@ -1,20 +1,34 @@
+body {
+  display: grid;
+  grid-template-columns: 15% auto 15%;
+}
 h1 {
   text-align: center;
+  /* border: 1px sol id blue; */
+  width: 100%;
+}
+
+div {
+  border: 1px solid blue;
 }
 
 #description {
   text-align: center;
+  grid-column: 1/3;
 }
 
 #form-body {
-  /* width: 80%; */
+  /* border: 1px solid red; */
   margin: auto;
   text-align: center;
-  display: block;
+  box-shadow: 2px 2px 5px #01010f;
+  background: #ebf3f2;
 }
 
-.label-div {
-  display: block;
+#survey-form {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  
 }
 
 .input-box {
