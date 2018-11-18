@@ -1,15 +1,16 @@
 body {
   display: grid;
-  grid-template-columns: 15% auto 15%;
+  grid-template-columns: auto 1fr auto;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  background: #D05A00;
+  color: #FEFFF8;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 1.1em;
 }
 h1 {
   text-align: center;
-  /* border: 1px sol id blue; */
   width: 100%;
-}
-
-div {
-  /* border: 1px solid blue; */
 }
 
 #description {
@@ -18,16 +19,26 @@ div {
 }
 
 #form-body {
-  /* border: 1px solid red; */
   margin: auto;
   text-align: center;
   box-shadow: 2px 2px 5px #01010f;
-  background: #ebf3f2;
+  /* background: #ebf3f2; */
+  background-image: url("../pic/asfalt-dark.png");
+  font-family: 'Lato', sans-serif;
 }
 
 #survey-form {
   display: grid;
   grid-template-columns: 1fr 1fr;
+}
+
+label {
+  padding-bottom: 10px;
+}
+
+.input-box {
+  margin-bottom: 10px;
+  width: 150px;
 }
 
 .text-right {
@@ -46,8 +57,7 @@ div {
 }
 
 textarea {
-  margins: 15px;
-  padding: 15px;
+  width: 100%;
 }
 
 #submit-div {
@@ -56,6 +66,8 @@ textarea {
   padding-bottom: 20px;
 }
 
-.input-box {
-  width: 120px;
+#submit {
+  height: 50px;
+  font-family: 'Lato', sans-serif;
+  font-size: 1.3em;
 }
