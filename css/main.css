@@ -3,7 +3,8 @@ body {
   grid-template-columns: auto 1fr auto;
   padding-top: 10px;
   padding-bottom: 10px;
-  background: #D05A00;
+  background: rgba(208, 90, 0, 0.87);
+  background-image: url("../pic/asfalt-dark.png");
   color: #FEFFF8;
   font-family: 'Open Sans', sans-serif;
   font-size: 1.1em;
@@ -11,6 +12,7 @@ body {
 h1 {
   text-align: center;
   width: 100%;
+  text-shadow: 1px 1px 3px #01010f;
 }
 
 #description {
@@ -22,9 +24,9 @@ h1 {
   margin: auto;
   text-align: center;
   box-shadow: 2px 2px 5px #01010f;
-  /* background: #ebf3f2; */
-  background-image: url("../pic/asfalt-dark.png");
   font-family: 'Lato', sans-serif;
+  background: rgb(208, 90, 0);
+
 }
 
 #survey-form {
